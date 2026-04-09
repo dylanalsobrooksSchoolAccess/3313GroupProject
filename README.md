@@ -26,14 +26,22 @@ MEETING NOTES - 04/08/2026
     <!-- The <form> tag itself MUST include this exact action and method: -->
     <form action="http://www.randyconnolly.com/tests/process.php" method="POST"></form>
 
-    First Name: <input type="text" id="first-name" class="form-input">
-    Last Name: <input type="text" id="last-name" class="form-input">
-    Email Address: <input type="email" id="email" class="form-input">
-    Phone Number: <input type="tel" id="phone" class="form-input">
-    Date of Event: <input type="date" id="event-date" class="form-input">
-    Start Time: <input type="time" id="event-time" class="form-input">
-    Estimated Guest Count: <input type="number" id="guest-count" class="form-input">
-    Type of Event: <select id="event-type" class="form-dropdown">
+    <!-- First Name: --> 
+    <input type="text" id="first-name" class="form-input">
+    <!-- Last Name:  -->
+    <input type="text" id="last-name" class="form-input">
+    <!-- Email Address:  -->
+    <input type="email" id="email" class="form-input">
+    <!-- Phone Number:  -->
+    <input type="tel" id="phone" class="form-input">
+    <!-- Date of Event:  -->
+    <input type="date" id="event-date" class="form-input">
+    <!-- Start Time:  -->
+    <input type="time" id="event-time" class="form-input">
+    <!-- Estimated Guest Count: --> 
+    <input type="number" id="guest-count" class="form-input">
+    <!-- Type of Event:  -->
+    <select id="event-type" class="form-dropdown">
 
     <!-- (Options: Wedding, Corporate, Private Party, Other)
     Do You Need Glassware Rental? --> 
