@@ -29,13 +29,14 @@
 
         </div>
 
-        <hr> <!-- Remove Later -->
+        <hr> <!-- TODO: Remove Later -->
 
         <div>
             <h2>Event Information</h2>
             <label for="event-type" class="form-input-titles">Type of Event:</label><br>
             <select id="event-type" class="form-dropdown"> <br>
                 <optgroup>
+                    <option value="null">Select...</option>
                     <option value="event-type-wedding">Wedding</option>
                     <option value="event-type-corporate">Corporate</option>
                     <option value="event-type-private">Private</option>
@@ -53,11 +54,11 @@
             <input type="number" id="guest-count" class="form-input"> <br>
         </div>
 
-        <hr> <!-- Remove Later -->
+        <hr> <!-- TODO: Remove Later -->
 
         <div>
             <h2>Party Preferences</h2>
-            <!-- come up with better class name than 'form-input-titles'-->
+            <!-- TODO: come up with better class name than 'form-input-titles'-->
             <label for="radio-group" class="form-input-titles">Do You Need Glassware Rental?</label><br>
 
             <input type="radio" id="radio-yes" name="glassware" class="form-radio" value="Yes - Glassware Needed">
@@ -68,7 +69,7 @@
 
         </div>
 
-        <hr> <!-- Remove Later -->
+        <hr> <!-- TODO: Remove Later -->
 
         <div>
             <label for="liqour-preference" class="form-input-titles">Preferred Base Spirits:</label><br>
@@ -87,10 +88,9 @@
 
             <input type="checkbox" id="checkbox-gin" class="form-checkbox">
             <label for="checkbox-gin" class="form-checkbox-labels">Gin</label> <br>
-            <!-- (Multiple checkboxes for: Vodka, Tequila, Whiskey, Rum, Gin) -->
         </div>
 
-        <hr> <!-- Remove Later -->
+        <hr> <!-- TODO: Remove Later -->
 
         <div>
             <label for="special-requests" class="form-input-titles">Custom Cocktail Requests (e.g., Themed Drinks and
@@ -98,7 +98,11 @@
             <textarea id="special-requests" class="form-textarea" placeholder="Custom Drink Order..."></textarea> <br>
         </div>
 
-        <hr>
+        <hr> <!-- TODO: Remove Later -->
+
+        <div id="error-messages" class="error-text"> <!-- TODO: Make Error Text Red!-->
+
+        </div>
 
         <!-- Submit Button: -->
         <button type="submit" id="submit-btn" class="btn-primary">Get Quote</button>
