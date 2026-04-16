@@ -1,18 +1,176 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
-
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drink of the Week | Bartending School</title>
 
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts (same as previous examples for consistency) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- ? -->
+    <style>
+        :root {
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Poppins', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: var(--font-heading);
+        }
+
+        .sidebar {
+            background-color: #f8f9fa;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+        }
+    </style>
 </head>
-<!-- test -->
-
 
 <body>
-    
+
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Dylan's Bartending School</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recipe.html">Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="book.html">Book a Bartender</a></li>
+                    <li class="nav-item"><a class="nav-link" href="submit-recipe.html">Submit a Recipe</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Sidebar Navigation (visible on large screens) -->
+            <div class="col-lg-2 sidebar py-4 d-none d-lg-block">
+                <h5 class="px-3 mb-3">Categories</h5>
+                <ul class="list-unstyled px-3">
+                    <li><a href="#" class="text-decoration-none text-dark">Classics</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Modern Cocktails</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Mocktails</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Seasonal Drinks</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Whiskey Cocktails</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Vodka Cocktails</a></li>
+                </ul>
+
+                <h5 class="px-3 mt-5 mb-3">Popular This Week!</h5>
+                <ul class="list-unstyled px-3">
+                    <li class="mb-2">Espresso Martini</li>
+                    <li class="mb-2">Smoky Old Fashioned</li>
+                    <li class="mb-2">Passion Fruit Margarita</li>
+                    <li class="mb-2">**We can add another drink**</li>
+                </ul>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-lg-10 py-5">
+
+                <!-- Hero - Drink of the Week -->
+                <div class="text-center mb-5">
+                    <h1 class="display-4 fw-bold">Recipes</h1>
+                    <p class="lead">List of our favorites</p>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <input type="text" class="form-control form-control-lg" placeholder="Search cocktails...">
+                            <button class="btn btn-dark">Search</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe Grid -->
+                <h2 class="mb-4">Featured Recipes</h2>
+                <div class="row g-4">
+                    <!-- You can add more cards later -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <center>The Espresso Martini</center>
+                                </h5>
+                                <p class="card-text">Vibe: Sophisticated, energetic, modern nightlife.</p>
+                                <p class="card-text">Ingredients:
+                                <p class="card-text">2 oz Vodka</p>
+                                <p class="card-text">.5 oz Coffee Liqueur (like Kahlúa)</p>
+                                <p class="card-text">1 oz Freshly brewed espresso</p>
+                                <p class="card-text">.5 oz Simple syrup</p>
+                                <p class="card-text">Instructions: Shake vigorously with ice until frothy, strain into a
+                                    chilled martini glass, and garnish with exactly three espresso beans..</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <center>The French 75</center>
+                                </h5>
+                                <p class="card-text">Vibe: Crisp, celebratory, upscale events and weddings.</p>
+                                <p class="card-text">Ingredients:
+                                <p class="card-text">1 oz Gin</p>
+                                <p class="card-text">.5 oz Simple syrup</p>
+                                <p class="card-text">3 oz Champagne (or Prosecco)</p>
+                                <p class="card-text">3x Fresh Lemon Wedge</p>
+                                <p class="card-text">Instructions: Shake the gin, fresh lemon wedge, and syrup with ice.
+                                    Strain into a champagne flute and top with the bubbly. Garnish with a Cocktail
+                                    Cherry.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <center>The Smoked Old Fashioned</center>
+                                </h5>
+                                <p class="card-text">Vibe: Timeless, moody, and spirit-forward.</p>
+                                <p class="card-text">Ingredients:
+                                <p class="card-text">2 oz Rye Whiskey or Bourbon/p>
+                                <p class="card-text">.5 oz Turbinado syrup</p>
+                                <p class="card-text">2 dashes Angostura bitters</p>
+                                <p class="card-text">2 dashes Orange Bitters</p>
+                                <p class="card-text">Instructions: Stir ingredients with a large ice cube in an Old
+                                    Fashion Tin for 30sec. Strain over a fresh large cube in a rocks glass. Garnish with
+                                    a flamed orange peel and Cocktail Cherry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="bg-dark text-white py-4">
+                <div class="container text-center">
+                    <p>&copy; 2026 Dylan's Bartending School • All Rights Reserved</p>
+                </div>
+            </footer>
+
+            <!-- Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
