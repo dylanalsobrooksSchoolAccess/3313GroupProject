@@ -22,3 +22,42 @@ h3 {
     position: sticky;
     top: 0;
 }
+
+
+.bookingHero {
+    background-image: url("../src/pexelsBartender.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+.submitRecipeHero {
+    background-image: url("../src/pexelsSubmitRecipeHero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+.heroTextBackground {
+    background-color: black;
+    border-radius: 15px;
+    padding: 0.33vw;
+    width: fit-content;
+    
+}
