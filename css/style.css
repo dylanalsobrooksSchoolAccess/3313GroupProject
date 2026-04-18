@@ -61,3 +61,68 @@ h3 {
     width: fit-content;
     
 }
+
+// I ADDED MY CODE BELOW DYLAN :) 
+
+/* Form input styling using UHD color scheme */
+
+.form-input {
+    width: 100%;
+    max-width: 420px;
+    padding: 0.75rem 1rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: #000;
+    background-color: #ffffff;
+    border: 2px solid #1f3a5f; /* navy */
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.form-input::placeholder{
+    color: #6c757d;
+}
+.form-input:hover {
+    border-color: #c8102e; /* red */
+}
+
+.form-input:focus {
+    border-color: #c8102e;
+    box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.2);
+}
+.btn-primary {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #c8102e; /* UHD red */
+    border: 2px solid #c8102e;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.25s ease;
+}
+/* Hover and focus for user interaction feedback */
+.btn-primary:hover {
+    background-color: #a30d25;
+    border-color: #a30d25;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+.btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(31, 58, 95, 0.25); /* navy glow */
+}
+
+.btn-primary:active {
+    transform: translateY(1px);
+}
+
+.btn-primary:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+    box-shadow: none;
+}
