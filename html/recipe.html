@@ -13,9 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-
-
+    <!-- ? -->
     <style>
         :root {
             --font-heading: 'Playfair Display', serif;
@@ -34,11 +32,18 @@
 
         .sidebar {
             background-color: #f8f9fa;
-            height: 100vh;
+            height: calc(100vh - 56px);
+            position: sticky;
+            top: 56px;
+        }
+
+        .navbar {
             position: sticky;
             top: 0;
+            z-index: 1020;
         }
     </style>
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -66,6 +71,10 @@
 
             <!-- Sidebar Navigation (visible on large screens) -->
             <div class="col-lg-2 sidebar py-4 d-none d-lg-block">
+                <div class="px-3 mb-4 text-center">
+                    <img src="../src/logo_02.jpg" alt="Bartending School Logo" class="img-fluid rounded"
+                        style="max-height: 200px;">
+                </div>
                 <h5 class="px-3 mb-3">Categories</h5>
                 <ul class="list-unstyled px-3">
                     <li><a href="#" class="text-decoration-none text-dark">Classics</a></li>
@@ -101,7 +110,7 @@
                         </div>
                     </div>
                 </div>
-<hr>
+                <hr>
                 <!-- Recipe Grid -->
                 <h2 class="mb-4"><em>Featured Recipes</em></h2>
                 <div class="row g-4">
@@ -110,17 +119,19 @@
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    <center>The Espresso Martini</center> <hr>
+                                    <center>The Espresso Martini</center>
+                                    <hr>
                                 </h5>
                                 <p class="card-text"><b>Vibe:</b> Sophisticated, energetic, modern nightlife.</p>
                                 <p class="card-text"><b>Ingredients:</b>
-                                    <ul>
-                                        <li class="card-text">2 oz Vodka</li>
-                                        <li class="card-text">.5 oz Coffee Liqueur (like Kahlúa)</li>
-                                        <li class="card-text">1 oz Freshly brewed espresso</li>
-                                        <li class="card-text">.5 oz Simple syrup</li>
-                                    </ul>
-                                <p class="card-text"><b>Instructions:</b> Shake vigorously with ice until frothy, strain into a
+                                <ul>
+                                    <li class="card-text">2 oz Vodka</li>
+                                    <li class="card-text">.5 oz Coffee Liqueur (like Kahlúa)</li>
+                                    <li class="card-text">1 oz Freshly brewed espresso</li>
+                                    <li class="card-text">.5 oz Simple syrup</li>
+                                </ul>
+                                <p class="card-text"><b>Instructions:</b> Shake vigorously with ice until frothy, strain
+                                    into a
                                     chilled martini glass, and garnish with exactly three espresso beans.</p>
                             </div>
                         </div>
@@ -129,17 +140,19 @@
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    <center>The French 75</center> <hr>
+                                    <center>The French 75</center>
+                                    <hr>
                                 </h5>
                                 <p class="card-text"><b>Vibe:</b> Crisp, celebratory, upscale events and weddings.</p>
                                 <p class="card-text"><b>Ingredients:</b>
-                                    <ul>
-                                        <li class="card-text">1 oz Gin</li>
-                                        <li class="card-text">.5 oz Simple syrup</li>
-                                        <li class="card-text">3 oz Champagne (or Prosecco)</li>
-                                        <li class="card-text">3x Fresh Lemon Wedge</li>
-                                    </ul>
-                                <p class="card-text"><b>Instructions:</b> Shake the gin, fresh lemon wedge, and syrup with ice.
+                                <ul>
+                                    <li class="card-text">1 oz Gin</li>
+                                    <li class="card-text">.5 oz Simple syrup</li>
+                                    <li class="card-text">3 oz Champagne (or Prosecco)</li>
+                                    <li class="card-text">3x Fresh Lemon Wedge</li>
+                                </ul>
+                                <p class="card-text"><b>Instructions:</b> Shake the gin, fresh lemon wedge, and syrup
+                                    with ice.
                                     Strain into a champagne flute and top with the bubbly. Garnish with a Cocktail
                                     Cherry.</p>
                             </div>
@@ -154,32 +167,33 @@
                                 </h5>
                                 <p class="card-text"><b>Vibe:</b> Timeless, moody, and spirit-forward.</p>
                                 <p class="card-text"><b>Ingredients:</b>
-                                    <ul>
-                                        <li class="card-text">2 oz Rye Whiskey or Bourbon</li>
-                                        <li class="card-text">.5 oz Turbinado syrup</li>
-                                        <li class="card-text">2 dashes Angostura bitters</li>
-                                        <li class="card-text">2 dashes Orange Bitters</li>
-                                    </ul>
-                                <p class="card-text"><b>Instructions:</b> Stir ingredients with a large ice cube in an Old
+                                <ul>
+                                    <li class="card-text">2 oz Rye Whiskey or Bourbon</li>
+                                    <li class="card-text">.5 oz Turbinado syrup</li>
+                                    <li class="card-text">2 dashes Angostura bitters</li>
+                                    <li class="card-text">2 dashes Orange Bitters</li>
+                                </ul>
+                                <p class="card-text"><b>Instructions:</b> Stir ingredients with a large ice cube in an
+                                    Old
                                     Fashion Tin for 30sec. Strain over a fresh large cube in a rocks glass. Garnish with
                                     a flamed orange peel and Cocktail Cherry.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>    
+            </div>
         </div>
     </div>
 
-            <!-- Footer -->
-            <footer class="bg-dark text-white py-4">
-                <div class="container text-center">
-                    <p>&copy; 2026 Dylan's Bartending School • All Rights Reserved</p>
-                </div>
-            </footer>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2026 Dylan's Bartending School • All Rights Reserved</p>
+        </div>
+    </footer>
 
-            <!-- Bootstrap JS -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
