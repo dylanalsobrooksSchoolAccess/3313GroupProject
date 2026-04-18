@@ -13,8 +13,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500&display=swap"
         rel="stylesheet">
-
-        <link rel="stylesheet" href="../css/style.css">
     <!-- ? -->
     <style>
         :root {
@@ -34,11 +32,18 @@
 
         .sidebar {
             background-color: #f8f9fa;
-            height: 100vh;
+            height: calc(100vh - 56px);
+            position: sticky;
+            top: 56px;
+        }
+
+        .navbar {
             position: sticky;
             top: 0;
+            z-index: 1020;
         }
     </style>
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -52,9 +57,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="recipe.html">Recipes</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="booking.html">Book a Bartender</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Book a Bartender</a></li>
                     <li class="nav-item"><a class="nav-link" href="submitRecipe.html">Submit a Recipe</a></li>
                 </ul>
             </div>
@@ -66,6 +71,10 @@
 
             <!-- Sidebar Navigation (visible on large screens) -->
             <div class="col-lg-2 sidebar py-4 d-none d-lg-block">
+                <div class="px-3 mb-4 text-center">
+                    <img src="../src/logo_02.jpg" alt="Bartending School Logo" class="img-fluid rounded"
+                        style="max-height: 200px;">
+                </div>
                 <h5 class="px-3 mb-3">Categories</h5>
                 <ul class="list-unstyled px-3">
                     <li><a href="#" class="text-decoration-none text-dark">Classics</a></li>
@@ -79,25 +88,23 @@
                 <h5 class="px-3 mt-5 mb-3">Popular This Week!</h5>
                 <ul class="list-unstyled px-3">
                     <li class="mb-2">Espresso Martini</li>
-                    <li class="mb-2">Smoked Old Fashioned</li>
+                    <li class="mb-2">Smoky Old Fashioned</li>
                 </ul>
             </div>
 
             <!-- Main Content -->
             <div class="col-lg-10 py-5">
+
+                <!-- Hero - Drink of the Week -->
                 <div class="text-center mb-5">
-                    <div class="bookingHero">
-                         <div class="heroTextBackground">
-                             <h1 class="display-4 fw-bold">Book a Bartender</h1>
-                        </div>
-                    </div>
+                    <h1 class="display-4 fw-bold">Book a Bartender</h1>
                 </div>
-                <hr>
+
 
                 <form>
                     <form action="http://www.randyconnolly.com/tests/process.php" method="POST"></form>
-                    <div class="contactInformation">
-                        <h2 class="text-center">Contact information</h2>
+                    <div>
+                        <h2>Contact information</h2>
                         <label for="first-name" class="form-input-titles">First Name:</label><br>
                         <input type="text" id="first-name" class="form-input"> <br>
 
@@ -114,8 +121,8 @@
 
                     <hr> <!-- TODO: Remove Later -->
 
-                    <div class="eventInformation">
-                        <h2 class="text-center">Event Information</h2>
+                    <div>
+                        <h2>Event Information</h2>
                         <label for="event-type" class="form-input-titles">Type of Event:</label><br>
                         <select id="event-type" class="form-dropdown"> <br>
                             <optgroup>
@@ -139,8 +146,8 @@
 
                     <hr> <!-- TODO: Remove Later -->
 
-                    <div class="partyPreferences">
-                        <h2 class="text-center">Party Preferences</h2>
+                    <div>
+                        <h2>Party Preferences</h2>
                         <!-- TODO: come up with better class name than 'form-input-titles'-->
                         <label for="radio-group" class="form-input-titles">Do You Need Glassware Rental?</label><br>
 
@@ -154,7 +161,9 @@
 
                     </div>
 
-                    <div class="basePreference">
+                    <hr> <!-- TODO: Remove Later -->
+
+                    <div>
                         <label for="liqour-preference" class="form-input-titles">Preferred Base Spirits:</label><br>
 
                         <input id="checkbox-vodka" type="checkbox" class="form-checkbox">
@@ -175,7 +184,7 @@
 
                     <hr> <!-- TODO: Remove Later -->
 
-                    <div class="customRequest">
+                    <div>
                         <label for="special-requests" class="form-input-titles">Custom Cocktail Requests (e.g., Themed
                             Drinks and
                             Menus):</label> <br>
