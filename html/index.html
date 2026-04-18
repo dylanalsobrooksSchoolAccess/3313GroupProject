@@ -13,10 +13,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- ? -->
 
-    
-    
+
     <style>
         :root {
             --font-heading: 'Playfair Display', serif;
@@ -35,11 +34,18 @@
 
         .sidebar {
             background-color: #f8f9fa;
-            height: 100vh;
+            height: calc(100vh - 56px);
+            position: sticky;
+            top: 56px;
+        }
+
+        .navbar {
             position: sticky;
             top: 0;
+            z-index: 1020;
         }
     </style>
+    <link href="../css/style.css" rel="stylesheet">
 
 
 </head>
@@ -69,6 +75,10 @@
 
             <!-- Sidebar Navigation (visible on large screens) -->
             <div class="col-lg-2 sidebar py-4 d-none d-lg-block">
+                <div class="px-3 mb-4 text-center">
+                    <img src="../src/logo_02.jpg" alt="Bartending School Logo" class="img-fluid rounded"
+                        style="max-height: 200px;">
+                </div>
                 <h5 class="px-3 mb-3">Categories</h5>
                 <ul class="list-unstyled px-3">
                     <li><a href="#" class="text-decoration-none text-dark">Classics</a></li>
@@ -93,8 +103,8 @@
                 <div class="text-center mb-5">
                     <h1 class="display-4 fw-bold">Drink of the Week</h1>
                     <p class="lead">Espresso Martini – Bold, smooth, and unforgettable</p>
-                    <img src="../src/pexelsEspressoMartini.jpg" alt="Espresso Martini"
-                        class="img-fluid rounded shadow" style="max-height: 500px;">
+                    <img src="../src/pexelsEspressoMartini.jpg" alt="Espresso Martini" class="img-fluid rounded shadow"
+                        style="max-height: 500px;">
                 </div>
 
                 <!-- Search Bar -->
@@ -108,22 +118,43 @@
                 </div>
 
                 <!-- Recipe Grid -->
-                 <hr>
-                <h2 class="mb-4"><center><em>Learn to Bartend at home, get certified!</em></center></h2>
-                <div class="row g-4">
+                <hr>
+                <h2 class="mb-4">
+                    <center><em>Learn to Bartend at home, get certified!</em></center>
+                </h2>
 
-                    <!-- You can add more cards later -->
-                    <div class="col-md-4">
-                        <div class="card h-100 shadow-sm">
-                            <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Drink">
-                            <div class="card-body">
-                                <h5 class="card-title">Espresso Martini</h5>
-                                <p class="card-text">A modern classic with coffee liqueur and vodka.</p>
-                            </div>
-                        </div>
+                <section class="about py-5 bg-light">
+                    <div class="container">
+                        <h2 class="text-center mb-4">About Us</h2>
+
+                        <!-- New first paragraph -->
+                        <p class="lead text-start mx-auto" style="max-width: 1400px;">
+                            Welcome to Dylan's Bartending School — your go-to destination for all things craft
+                            cocktails.
+                            We’re a team of passionate bartenders and mixologists dedicated to helping you
+                            <strong>learn to bartend at home and get certified</strong>. From professional
+                            recipes and techniques to detailed instructions and inspiration, we make it easy
+                            to create memorable drinks at home or behind the bar. Whether you’re a beginner
+                            or a seasoned pro, we’re here to help you raise the bar.
+                        </p>
+                        <!-- New second paragraph -->
+                        <p class="lead text-start mx-auto" style="max-width: 1400px;">
+                            Whether you're just starting out or looking to take your skills to the next level,
+                            our step-by-step guides, video tutorials, and certification resources will help you
+                            build confidence and creativity behind the bar. Join our growing community and turn
+                            every gathering into a memorable experience.
+                        </p>
+                        <!-- New third paragraph - History -->
+                        <p class="text-start mx-auto lead" style="max-width: 1400px;">
+                            Dylan's Bartending School™ was founded in 2011 by Dylan Also in Houston, Texas.
+                            Recognized as an elite bartender, Dylan was recently voted #8 in the
+                            Top 10 Bartenders by the Houston Bartenders Association. His passion
+                            and expertise continue to inspire our mission of making professional
+                            bartending skills accessible to everyone.
+                        </p>
                     </div>
-                    <!-- Repeat cards as needed -->
-                </div>
+                </section>
+
 
             </div>
         </div>
@@ -132,7 +163,7 @@
     <!-- Footer -->
     <footer class="bg-dark footer text-white py-4">
         <div class="container text-center">
-            <p>&copy; 2026 Dylan's Bartending School • All Rights Reserved</p>
+            <p>&copy; 2026 Dylan's Bartending School™ • All Rights Reserved</p>
         </div>
     </footer>
 
