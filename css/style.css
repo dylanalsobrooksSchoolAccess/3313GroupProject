@@ -1,28 +1,53 @@
 @charset "utf-8";
 
-
 :root {
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Poppins', sans-serif;
+
+    /* UHD color palette */
+    --uhd-red: #c8102e;
+    --uhd-red-dark: #a30d25;
+    --uhd-navy: #1f3a5f;
+    --uhd-white: #ffffff;
+    --uhd-black: #000000;
+    --uhd-light: #f8f9fa;
+    --uhd-gray: #6c757d;
 }
 
 body {
     font-family: var(--font-body);
+    color: var(--uhd-black);
+    background-color: var(--uhd-white);
 }
 
 h1,
 h2,
 h3 {
     font-family: var(--font-heading);
+    color: var(--uhd-navy);
 }
 
 .sidebar {
-    background-color: #f8f9fa;
+    background-color: var(--uhd-light);
     height: 100vh;
     position: sticky;
     top: 0;
+    border-right: 3px solid var(--uhd-navy);
 }
 
+.sidebar h5 {
+    color: var(--uhd-red);
+    font-weight: 700;
+}
+
+.sidebar a {
+    color: var(--uhd-navy);
+    transition: color 0.2s ease;
+}
+
+.sidebar a:hover {
+    color: var(--uhd-red);
+}
 
 .bookingHero {
     background-image: url("../src/pexelsBartender.jpg");
@@ -30,13 +55,11 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 60vh;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    color: white;
+    color: var(--uhd-white);
 }
 
 .submitRecipeHero {
@@ -45,26 +68,40 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 60vh;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    color: white;
+    color: var(--uhd-white);
 }
 
 .heroTextBackground {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
-    padding: 0.33vw;
+    padding: 0.5rem 1rem;
     width: fit-content;
-    
 }
 
-// I ADDED MY CODE BELOW DYLAN :) 
+.navbar-brand {
+    color: var(--uhd-white) !important;
+}
 
-/* Form input styling using UHD color scheme */
+.nav-link:hover,
+.nav-link.active {
+    color: var(--uhd-red) !important;
+}
+
+footer {
+    border-top: 4px solid var(--uhd-red);
+}
+
+.homeHeroImage {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* Dylan please look over my corrections and inputted codes for the css file */
+/* Ashleigh Form Styling for input  */
 
 .form-input {
     width: 100%;
@@ -72,49 +109,52 @@ h3 {
     padding: 0.75rem 1rem;
     font-family: var(--font-body);
     font-size: 1rem;
-    color: #000;
-    background-color: #ffffff;
-    border: 2px solid #1f3a5f; /* navy */
+    color: var(--uhd-black);
+    background-color: var(--uhd-white);
+    border: 2px solid var(--uhd-navy);
     border-radius: 8px;
     outline: none;
     box-sizing: border-box;
     transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
-.form-input::placeholder{
-    color: #6c757d;
+
+.form-input::placeholder {
+    color: var(--uhd-gray);
 }
+
 .form-input:hover {
-    border-color: #c8102e; /* red */
+    border-color: var(--uhd-red);
 }
 
 .form-input:focus {
-    border-color: #c8102e;
+    border-color: var(--uhd-red);
     box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.2);
 }
+
 .btn-primary {
     display: inline-block;
     padding: 0.8rem 1.5rem;
     font-family: var(--font-body);
     font-size: 1rem;
     font-weight: 600;
-    color: #ffffff;
-    background-color: #c8102e; /* UHD red */
-    border: 2px solid #c8102e;
+    color: var(--uhd-white);
+    background-color: var(--uhd-red);
+    border: 2px solid var(--uhd-red);
     border-radius: 8px;
     cursor: pointer;
     text-align: center;
     transition: all 0.25s ease;
 }
-/* Hover and focus for user interaction feedback */
+
 .btn-primary:hover {
-    background-color: #a30d25;
-    border-color: #a30d25;
+    background-color: var(--uhd-red-dark);
+    border-color: var(--uhd-red-dark);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
 }
 
 .btn-primary:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(31, 58, 95, 0.25); /* navy glow */
+    box-shadow: 0 0 0 3px rgba(31, 58, 95, 0.25);
 }
 
 .btn-primary:active {
