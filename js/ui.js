@@ -57,3 +57,22 @@ function loadSidebar() {
 }
 
 window.addEventListener('DOMContentLoaded', loadSidebar);
+
+
+
+const footerHTML = `
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2026 Dylan's Bartending School • All Rights Reserved</p>
+        </div>
+    </footer>`;
+
+function loadFooter() {
+    let footerBox = document.getElementById('footer-container');
+    if (footerBox !== null) {
+        footerBox.innerHTML = footerHTML;
+    }
+}
+
+window.addEventListener('DOMContentLoaded', loadFooter);
