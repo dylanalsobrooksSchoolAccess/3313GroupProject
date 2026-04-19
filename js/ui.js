@@ -24,3 +24,36 @@ function loadNavBar() {
 }
 
 window.addEventListener('DOMContentLoaded', loadNavBar);
+
+const sidebarHTML = `            
+<!-- Sidebar Navigation (visible on large screens) -->
+            <div>
+                <div class="px-3 mb-4 text-center">
+                    <img src="../src/logo_02.jpg" alt="Bartending School Logo" class="img-fluid rounded"
+                        style="max-height: 200px;">
+                </div>
+                <h5 class="px-3 mb-3">Categories</h5>
+                <ul class="list-unstyled px-3">
+                    <li><a href="#" class="text-decoration-none text-dark">Classics</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Modern Cocktails</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Mocktails</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Seasonal Drinks</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Whiskey Cocktails</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Vodka Cocktails</a></li>
+                </ul>
+
+                <h5 class="px-3 mt-5 mb-3">Popular This Week!</h5>
+                <ul class="list-unstyled px-3">
+                    <li class="mb-2">Espresso Martini</li>
+                    <li class="mb-2">Smoked Old Fashioned</li>
+                </ul>
+            </div>`;
+
+function loadSidebar() {
+    let sidebarBox = document.getElementById('sidebar-container');
+    if (sidebarBox !== null) {
+        sidebarBox.innerHTML = sidebarHTML;
+    }
+}
+
+window.addEventListener('DOMContentLoaded', loadSidebar);
