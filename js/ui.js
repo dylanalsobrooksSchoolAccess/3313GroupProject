@@ -14,7 +14,8 @@ const navBarHTML = `
                 </ul>
             </div>
         </div>
-    </nav>`;
+    </nav>`
+;
 
 function loadNavBar() {
     let navBox = document.getElementById('nav-container');
@@ -22,41 +23,45 @@ function loadNavBar() {
         navBox.innerHTML = navBarHTML;
     }
 }
-
 window.addEventListener('DOMContentLoaded', loadNavBar);
 
+
+
+
+
 const sidebarHTML = `            
-<!-- Sidebar Navigation (visible on large screens) -->
-            <div>
-                <div class="px-3 mb-4 text-center">
-                    <img src="../src/logo_02.jpg" alt="Bartending School Logo" class="img-fluid rounded"
-                        style="max-height: 200px;">
-                </div>
-                <h5 class="px-3 mb-3">Categories</h5>
-                <ul class="list-unstyled px-3">
-                    <li><a href="#" class="text-decoration-none text-dark">Classics</a></li>
-                    <li><a href="#" class="text-decoration-none text-dark">Modern Cocktails</a></li>
-                    <li><a href="#" class="text-decoration-none text-dark">Mocktails</a></li>
-                    <li><a href="#" class="text-decoration-none text-dark">Seasonal Drinks</a></li>
-                    <li><a href="#" class="text-decoration-none text-dark">Whiskey Cocktails</a></li>
-                    <li><a href="#" class="text-decoration-none text-dark">Vodka Cocktails</a></li>
-                </ul>
+    <!-- Sidebar Navigation (visible on large screens) -->
+    <div>
+        <div class="px-3 mb-4 text-center">
+            <img src="../src/logo_02.jpg" alt="Bartending School Logo" class="img-fluid rounded"
+                style="max-height: 200px;">
+        </div>
+        <h5 class="px-3 mb-3">Categories</h5>
+        <ul class="list-unstyled px-3">
+            <li><a href="#" class="text-decoration-none text-dark">Classics</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Modern Cocktails</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Mocktails</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Seasonal Drinks</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Whiskey Cocktails</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Vodka Cocktails</a></li>
+        </ul>
 
-                <h5 class="px-3 mt-5 mb-3">Popular This Week!</h5>
-                <ul class="list-unstyled px-3">
-                    <li class="mb-2">Espresso Martini</li>
-                    <li class="mb-2">Smoked Old Fashioned</li>
-                </ul>
-            </div>`;
-
+        <h5 class="px-3 mt-5 mb-3">Popular This Week!</h5>
+        <ul class="list-unstyled px-3">
+            <li class="mb-2">Espresso Martini</li>
+            <li class="mb-2">Smoked Old Fashioned</li>
+        </ul>
+    </div>`
+;
 function loadSidebar() {
     let sidebarBox = document.getElementById('sidebar-container');
     if (sidebarBox !== null) {
         sidebarBox.innerHTML = sidebarHTML;
     }
 }
-
 window.addEventListener('DOMContentLoaded', loadSidebar);
+
+
 
 
 
@@ -66,13 +71,62 @@ const footerHTML = `
         <div class="container text-center">
             <p>&copy; 2026 Dylan's Bartending School • All Rights Reserved</p>
         </div>
-    </footer>`;
-
+    </footer>`
+;
 function loadFooter() {
     let footerBox = document.getElementById('footer-container');
     if (footerBox !== null) {
         footerBox.innerHTML = footerHTML;
     }
 }
-
 window.addEventListener('DOMContentLoaded', loadFooter);
+
+
+
+
+
+// store the HTML for injection
+const ageVerificationHTML = `
+    <!-- inject the modal dialogue -->
+    <div id="age-verification-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2>Age Verification</h2>
+            <p>Please confirm your age to proceed.</p>
+            <button id="btn-yes">Yes, I am over 21</button>
+            <button id="btn-no">No, I am not over 21</button>
+        </div>
+    </div>`
+;
+function loadAgeVerification() {
+    // check if user has verified age yet
+    let ageVerified = sessionStorage.getItem("ageVerified");
+        
+    // if null, user has not verified age yet, so show modal
+    if (ageVerified === null) {
+
+        // find empty modal
+        let modalBox = document.getElementById('age-gate-container');
+
+        // inject modal HTML
+        if (modalBox !== null) {
+            modalBox.innerHTML = ageVerificationHTML;
+            
+            // add event listeners to buttons
+            let yesButton = document.getElementById("btn-yes");
+            let noButton = document.getElementById("btn-no");
+
+            yesButton.addEventListener('click', function() {
+                // indicate user verified age
+                sessionStorage.setItem("ageVerified", "true");
+
+                // hide modal
+                modalBox.innerHTML = "";
+            });
+            
+            noButton.addEventListener('click', function() {
+                window.location.href = "about:blank";
+            });
+        }
+    }
+}
+window.addEventListener('DOMContentLoaded', loadAgeVerification);
