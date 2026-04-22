@@ -85,7 +85,7 @@ window.addEventListener('DOMContentLoaded', loadFooter);
 
 
 
-// store the HTML for injection
+// Age Verification Modal
 const ageVerificationHTML = `
     <!-- inject the modal dialogue -->
     <div id="age-verification-modal" class="modal-overlay">
