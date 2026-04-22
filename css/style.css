@@ -197,3 +197,38 @@ footer {
 .modal-content button {
     margin: 10px;
 }
+
+/* Get Certified */
+.getCertifiedImg {
+    max-height: 500px;
+}
+
+.getCertifiedP {
+    max-width: 1400px;
+    padding: 5%;
+}
+
+/* Learning for Everyone */
+.learningForEveryoneImg {
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 60%;
+    width: 100%;
+}
+
+.learningForEveryoneP {
+    padding: 5%;
+    font-size: 1.5rem;
+}
+
+/* About Us */
+
+.aboutUsImg {
+    max-height: 550px;
+}
+
+.aboutUsP {
+    padding: 1%;
+    font-size: 1.5rem;
+    
+}
