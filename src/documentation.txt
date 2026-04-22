@@ -1,0 +1,20 @@
+Report – 30 points
+1)The report has a table of content: introduction, body and a conclusion.
+2)Explain the design theme and concept.
+3)List the styles of each html page.
+4)Explain the form and each html page.
+5)Include name of the team members on top of the report.
+
+Table of content
+
+Introduction
+The design theme we have a local bartender booking and education website. blah blah
+
+Body
+list styles of html pages:
+- index.html. start with purpose of page. describe how it functions. nav,sidebar,main content, ect.
+- recipe.html
+- booking.html
+- submitRecipe.html
+Conclusion
+summary of report (mention collaboration via zoom, groupme, github, email)
