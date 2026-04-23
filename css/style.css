@@ -49,38 +49,7 @@ h3 {
     color: var(--uhd-red);
 }
 
-.bookingHero {
-    background-image: url("../src/pexelsBartender.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--uhd-white);
-}
 
-.submitRecipeHero {
-    background-image: url("../src/pexelsSubmitRecipeHero.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--uhd-white);
-}
-
-.heroTextBackground {
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 15px;
-    padding: 0.5rem 1rem;
-    width: fit-content;
-}
 
 .navbar-brand {
     color: var(--uhd-white) !important;
@@ -94,6 +63,8 @@ h3 {
 footer {
     border-top: 4px solid var(--uhd-red);
 }
+
+
 
 .homeHeroImage {
     max-height: 500px;
@@ -197,22 +168,33 @@ footer {
 
 
 
-/* Home Page */
+/* home page */
+
 .indexHero {
     max-height: 500px;
 }
 
-/* Get Certified */
+/* get certified */
+.getCertifiedH2 {
+    font-size: 3rem;
+    padding: 5%;
+}
 .getCertifiedImg {
     max-height: 500px;
+    object-fit: cover;
 }
 
 .getCertifiedP {
-    max-width: 1400px;
+    font-size: 1.75rem;
+    line-height: 1.6;
+}
+
+/* learning for everyone */
+.learningForEveryoneH2 {
+    font-size: 3rem;
     padding: 5%;
 }
 
-/* Learning for Everyone */
 .learningForEveryoneImg {
     height: 300px;
     object-fit: cover;
@@ -221,20 +203,26 @@ footer {
 }
 
 .learningForEveryoneP {
-    padding: 5%;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    line-height: 1.6;
 }
 
-/* About Us */
+/* about us */
 .aboutUsImg {
     max-height: 550px;
+    object-fit: cover;
 }
 
 .aboutUsP {
-    padding: 1%;
-    font-size: 1.5rem;
-    
+    font-size: 1.75rem;
+    line-height: 1.6;
 }
+
+.aboutUsH2 {
+    font-size: 3rem;
+    padding: 5%;
+}
+
 
 /* booking page */ 
 .bookingCard {
