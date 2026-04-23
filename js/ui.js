@@ -30,11 +30,10 @@ window.addEventListener('DOMContentLoaded', loadNavBar);
 
 
 const sidebarHTML = `            
-    <!-- Sidebar Navigation (visible on large screens) -->
+    <!-- sidebar nav (large screens only) -->
     <div>
-        <div class="px-3 mb-4 text-center">
-            <img src="../src/logo_02.jpg" alt="Bartending School Logo" class="img-fluid rounded"
-                style="max-height: 200px;">
+        <div class="mb-4 text-center">
+            <img src="../src/logo_02.jpg" alt="Bartending School Logo" class="img-fluid rounded" style="max-height: 200px;">
         </div>
         <h5 class="px-3 mb-3">Categories</h5>
         <ul class="list-unstyled px-3">
@@ -46,10 +45,26 @@ const sidebarHTML = `
             <li><a href="#" class="text-decoration-none text-dark">Vodka Cocktails</a></li>
         </ul>
 
-        <h5 class="px-3 mt-5 mb-3">Popular This Week!</h5>
+        
+        <h5 class="px-3 mb-3">Drink of the Week!</h5>
         <ul class="list-unstyled px-3">
-            <li class="mb-2">Espresso Martini</li>
-            <li class="mb-2">Smoked Old Fashioned</li>
+            <li><a href="#" class="text-decoration-none text-dark">Espresso Martini</a></li>
+        </ul>
+
+        <h5 class="px-3 mb-3">Popular Now!</h5>
+        <ul class="list-unstyled px-3">
+            <li><a href="#" class="text-decoration-none text-dark">The Cosmopolitan</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">The Manhattan</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">The Moscow Mule</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">The Negroni</a></li>
+        </ul>
+
+        <h5 class="px-3 mb-3">Learning Resources</h5>
+        <ul class="list-unstyled px-3">
+            <li><a href="#" class="text-decoration-none text-dark">What is a Cocktail?</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">How to Make a Perfect Martini</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">The History of the Manhattan</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Get Certified as a Bartender</a></li>
         </ul>
     </div>`
 ;
@@ -85,7 +100,7 @@ window.addEventListener('DOMContentLoaded', loadFooter);
 
 
 
-// Age Verification Modal
+// age verification HTML
 const ageVerificationHTML = `
     <!-- inject the modal dialogue -->
     <div id="age-verification-modal" class="modal-overlay">
