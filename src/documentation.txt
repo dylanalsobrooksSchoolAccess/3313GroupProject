@@ -8,13 +8,49 @@ Report – 30 points
 Table of content
 
 Introduction
-The design theme we have a local bartender booking and education website. blah blah
+
+    The purpose of our site, "Dylan's Bartending School," is to serve as an educational resource where users can learn to make popular cocktails at home. 
+It also functions as a business portal where customers can book a private bartender for events. 
+The site is designed to be easy to navigate, visually appealing, and fully responsive for both desktop and mobile devices. 
 
 Body
-list styles of html pages:
+
+Design Theme and Concept:
+    We wanted the site to feel professional, upscale, and slightly moody, matching the atmosphere from a real cocktail bar. 
+To meet the project requirements, we incorporated the UHD color palette into our brand identity. 
+We used UHD Red (#c8102e) as our accent color for active states and UHD Navy (#1f3a5f) for borders and headings.
+The combination of dark and light colors is an attempt to make the content 'pop off the screen.'
+
+Stylesheet Implementation:
+    We used the Bootstrap 5 framework to quickly structure the elements of the entire site. 
+Bootstrap's grid system did much of the heavy lifting, along with the utility classes to handle spacing and shadows with ease. 
+    Any styling that was not a product of the Bootstrap framework was written in our 'style.css' file.
+Within this file, we imported two google fonts, 'Playfair Display' and 'Poppins.' 
+We created custom sizing rules for the images used, so that they do not appear stretched or distorted across different device screens. 
+
+Webpage Breakdown: 
 - index.html. start with purpose of page. describe how it functions. nav,sidebar,main content, ect.
+    Landing page, attention getter with hero, about us section (bootstrap flex & grid), !trigger for age verification system!
 - recipe.html
+    primary location for educational resources, displays curated list of 15 classic cocktails, organized into responsive grid with bootstrap, each card has name, vibes, ingredients, instructions
 - booking.html
+    primary location for business requests, features a 12-control booking form, describe form details, routes via post to PHP server
 - submitRecipe.html
+    This page is meant to be a second call-to-action page, to retain enthusiastic users and drive engagement with a chance of their recipe being featured on the home page. 
+The form is made up of two sections to group relevant details.
+The first being 'Recipe Information,' with a textbox to enter the custom drink name, and text areas to capture details such as ingredients, descriptions, and instructions. 
+The second is 'Contact Information,' which re-uses the section from booking.html. 
+Contact information is located at the bottom of both forms to allow users to easily differentiate the purpose of each form at a glance. 
+
+    To keep our code 'DRY' (Don't Repeat Yourself), we abstracted our navigation, sidebar, and footer into a single JavaScript file called 'ui.js.'
+This script injects these elements across all four HTML pages while they are loading. 
+
 Conclusion
 summary of report (mention collaboration via zoom, groupme, github, email)
+
+    Building this website was a fun way to challenge our group's HTML/CSS/JavaScript skills! 
+One of our biggest challenges was getting a layout that looked stylish on both the desktop and mobile views, without repeating large blocks of code.  
+After brainstorming some different options for what our theme should be, the group voted to create a bartending website. 
+Because we had direct access to a professional bartender in the family, we were able to curate an authentic list of the 15 classic cocktails most frequently ordered, which gave the site a highly realistic feel. 
+Once there was content to implement into the webpages, our group met at minimum once a week. 
+Using GroupMe, Zoom, and Github, we collaborated and delegated tasks to effectively meet our deadline. 
