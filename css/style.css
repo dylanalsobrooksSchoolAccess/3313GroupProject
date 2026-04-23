@@ -100,9 +100,6 @@ footer {
     object-fit: cover;
 }
 
-/* Dylan please look over my corrections and inputted codes for the css file */
-/* Ashleigh Form Styling for input  */
-
 .form-input {
     width: 100%;
     max-width: 420px;
@@ -167,8 +164,7 @@ footer {
     box-shadow: none;
 }
 
-/* Age Verification Modal */
-
+/* age verification modal */
 /* full-screen overlay */
 .modal-overlay {
     position: fixed;
@@ -198,6 +194,14 @@ footer {
     margin: 10px;
 }
 
+
+
+
+/* Home Page */
+.indexHero {
+    max-height: 500px;
+}
+
 /* Get Certified */
 .getCertifiedImg {
     max-height: 500px;
@@ -222,7 +226,6 @@ footer {
 }
 
 /* About Us */
-
 .aboutUsImg {
     max-height: 550px;
 }
@@ -231,4 +234,9 @@ footer {
     padding: 1%;
     font-size: 1.5rem;
     
+}
+
+/* booking page */ 
+.bookingCard {
+    max-width: 1000px;
 }
