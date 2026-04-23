@@ -172,6 +172,9 @@ footer {
 
 .indexHero {
     max-height: 500px;
+    object-fit: cover;
+    object-position: 50% 45%;
+    width: 80%;
 }
 
 /* get certified */
