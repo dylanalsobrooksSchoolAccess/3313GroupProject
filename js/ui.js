@@ -1,7 +1,7 @@
 const navBarHTML = `
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Dylan's Bartending School</a>
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold" href="index.html">Dylan's Bartending School</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
