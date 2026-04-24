@@ -133,40 +133,21 @@ footer {
     box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.2);
 }
 
-.btn-primary {
+.submit-form-button {
     display: inline-block;
-    padding: 0.8rem 1.5rem;
-    font-family: var(--font-body);
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--uhd-white);
-    background-color: var(--uhd-red);
-    border: 2px solid var(--uhd-red);
-    border-radius: 8px;
-    cursor: pointer;
-    text-align: center;
+    border: 2px solid var(--uhd-gray);
+    color: var(--uhd-gray);
+    padding: 4px 10px;
+    background-color: transparent;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
     transition: all 0.25s ease;
 }
-
-.btn-primary:hover {
-    background-color: var(--uhd-red-dark);
-    border-color: var(--uhd-red-dark);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
-}
-
-.btn-primary:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(31, 58, 95, 0.25);
-}
-
-.btn-primary:active {
-    transform: translateY(1px);
-}
-
-.btn-primary:disabled {
-    background-color: #999;
-    cursor: not-allowed;
-    box-shadow: none;
+.submit-form-button:hover {
+    background-color: var(--uhd-red);
+    color: var(--uhd-light);
+    border-color: var(--uhd-red);
 }
 
 /* age verification modal */
@@ -213,7 +194,6 @@ footer {
 /* get certified */
 .getCertifiedH2 {
     font-size: 3rem;
-    padding: 5%;
 }
 .getCertifiedImg {
     max-height: 500px;
@@ -245,7 +225,7 @@ footer {
 /* learning for everyone */
 .learningForEveryoneH2 {
     font-size: 3rem;
-    padding: 5%;
+    padding: 2.5%;
 }
 
 .learningForEveryoneImg {
@@ -281,7 +261,7 @@ footer {
 
 /* about us */
 .aboutUsImg {
-    max-height: 550px;
+    max-height: 600px;
     object-fit: cover;
 }
 
@@ -292,7 +272,6 @@ footer {
 
 .aboutUsH2 {
     font-size: 3rem;
-    padding: 5%;
 }
 
 
