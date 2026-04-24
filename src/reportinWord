@@ -1,0 +1,59 @@
+
+
+Project Report
+MIS3313
+
+Group members:
+Dylan Alsobrooks
+JT Tovar
+Ashleigh-Isabella Uzuegbu
+Giovanni Ordonez
+
+
+
+
+
+
+
+
+
+
+
+Table of Contents
+1.	Introduction 
+2.	Design Theme and Concept 
+3.	Stylesheet Implementation 
+4.	Webpage Breakdown 
+5.	Form Explanation 
+6.	Conclusion
+
+Introduction
+The purpose of our website, Dylan’s Bartending School, is to serve as both an educational resource and a business portal. Users can learn how to make popular cocktails at home, explore professional recipes, and book a private bartender for events. The site is designed to be visually appealing, easy to navigate, and fully responsive across desktop and mobile devices.
+
+Design Theme and Concept
+We chose a professional yet approachable bartending school theme that reflects the upscale atmosphere of a real cocktail bar. The overall aesthetic is modern, slightly moody, and elegant, using a dark-and-light color scheme to make content stand out. We incorporated the UHD color palette, specifically UHD Red (#c8102e) as our primary accent color for buttons and active states, and UHD Navy (#1f3a5f) for headings and borders. This combination creates a premium feel while remaining warm and inviting to both beginners and experienced users.
+
+  Stylesheet Implementation
+The entire site was built using the Bootstrap 5 framework for layout, responsiveness, and consistent styling. Bootstrap’s grid system and utility classes handled most of the structural work. Any additional custom styling was placed in a single external file named style.css. In this stylesheet, we imported two Google Fonts: 
+•	Playfair Display – used for headings 
+•	Poppins – used for body text
+Custom rules were also created to ensure images display correctly at different screen sizes without distortion.
+
+  Webpage Breakdown
+1. index.html (Home Page)
+The landing page features a bold hero section highlighting the “Drink of the Week,” an About Us section, and a trigger for the age verification system. It includes a top navigation bar and a sidebar on larger screens. The page serves as the main entry point and attention-grabber for the site.
+2. recipes.html
+This is the primary educational page. It displays a curated list of 15 classic cocktails in a responsive Bootstrap grid. Each card includes the drink name, description (“vibes”), ingredients, and instructions.
+3. booking.html
+This page contains the main business call-to-action. It features a comprehensive 12-control booking form for private bartender services. The form uses the required http://www.randyconnolly.com/tests/process.php action.
+4. submit-recipe.html
+This page serves as a secondary call-to-action to engage enthusiastic users. It allows visitors to submit their own cocktail recipes with the possibility of being featured on the home page. The form is divided into two clear sections: “Recipe Information” and “Contact Information.
+”To keep our code clean and maintainable (“DRY” principle), we abstracted the navigation bar, sidebar, and footer into a single JavaScript file (ui.js) that dynamically injects these elements across all pages.
+
+  Form Explanation
+The main form is located on the booking.html page. It contains a minimum of 12 different form controls, including text inputs, select menus, radio buttons, checkboxes, and text areas. The form is properly labeled and grouped for clarity. It submits data via the POST method to http://www.randyconnolly.com/tests/process.php.
+
+  Conclusion
+Building Dylan’s Bartending School was an excellent opportunity to apply and strengthen our HTML, CSS, and JavaScript skills. One of our biggest challenges was creating a stylish and consistent layout that worked well on both desktop and mobile without duplicating large blocks of code. After brainstorming several themes, the group unanimously chose a bartending school concept. Having direct access to a professional bartender in the family allowed us to create an authentic and realistic list of classic cocktails.
+Our team collaborated effectively through weekly Zoom meetings, GroupMe, GitHub, and email. We are proud of the final website and believe it successfully meets all project requirements while providing a useful and engaging user experience.
+
