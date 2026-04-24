@@ -9,8 +9,8 @@ const navBarHTML = `
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="recipe.html">Recipes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="booking.html">Book a Bartender</a></li>
-                    <li class="nav-item"><a class="nav-link" href="submitRecipe.html">Submit a Recipe</a></li>
+                    <li class="nav-item d-flex align-items-center"><a class="cta-recipe" href="submitRecipe.html">Submit a Recipe</a></li>
+                    <li class="nav-item d-flex align-items-center"><a class="cta-booking" href="booking.html">Book a Bartender</a></li>
                 </ul>
             </div>
         </div>

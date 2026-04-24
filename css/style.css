@@ -27,6 +27,7 @@ h3 {
     color: var(--uhd-navy);
 }
 
+/* sidebar */
 .sidebar {
     background-color: var(--uhd-light);
     height: 100vh;
@@ -50,7 +51,7 @@ h3 {
 }
 
 
-
+/* navbar */
 .navbar-brand {
     color: var(--uhd-white) !important;
 }
@@ -60,17 +61,50 @@ h3 {
     color: var(--uhd-red) !important;
 }
 
+.cta-recipe {
+    display: inline-block;
+    border: 2px solid var(--uhd-light);
+    color: var(--uhd-light);
+    padding: 4px 10px;
+    background-color: transparent;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.cta-recipe:hover {
+    background-color: var(--uhd-red);
+    color: var(--uhd-light);
+    border-color: var(--uhd-red);
+}
+
+.cta-booking {
+    display: inline-block;
+    border: 2px solid var(--uhd-red);
+    color: var(--uhd-light);
+    padding: 4px 10px;
+    background-color: var(--uhd-red);
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    margin-left: 10px;
+    
+}
+
+.cta-booking:hover {
+    background-color: var(--uhd-white);
+    color: var(--uhd-red);
+    border-color: var(--uhd-white);
+}
+
+/* footer */
 footer {
     border-top: 4px solid var(--uhd-red);
 }
 
 
 
-.homeHeroImage {
-    max-height: 500px;
-    object-fit: cover;
-}
-
+/* forms */
 .form-input {
     width: 100%;
     max-width: 420px;
@@ -169,7 +203,6 @@ footer {
 
 
 /* home page */
-
 .indexHero {
     max-height: 500px;
     object-fit: cover;
@@ -192,6 +225,23 @@ footer {
     line-height: 1.6;
 }
 
+.cta-enroll-now {
+    display: inline-block;
+    border: 2px solid var(--uhd-gray);
+    color: var(--uhd-gray);
+    padding: 4px 10px;
+    background-color: transparent;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.cta-enroll-now:hover {
+    background-color: var(--uhd-gray);
+    color: var(--uhd-light);
+    border-color: var(--uhd-gray);
+}
+
 /* learning for everyone */
 .learningForEveryoneH2 {
     font-size: 3rem;
@@ -209,6 +259,25 @@ footer {
     font-size: 1.75rem;
     line-height: 1.6;
 }
+
+.cta-learn-more {
+    display: inline-block;
+    border: 2px solid var(--uhd-navy);
+    color: var(--uhd-navy);
+    padding: 4px 10px;
+    background-color: transparent;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.cta-learn-more:hover {
+    background-color: var(--uhd-navy);
+    color: var(--uhd-light);
+    border-color: var(--uhd-navy);
+}
+
+
 
 /* about us */
 .aboutUsImg {
