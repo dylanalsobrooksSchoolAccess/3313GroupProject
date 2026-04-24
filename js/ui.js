@@ -21,6 +21,20 @@ function loadNavBar() {
     let navBox = document.getElementById('nav-container');
     if (navBox !== null) {
         navBox.innerHTML = navBarHTML;
+    
+    let currentPage = window.location.pathname.split("/").pop(); // get current page name
+
+    if (currentPage === "") { 
+        currentPage = "index.html";
+    } // redirect root to index
+
+    let navLinks = document.querySelectorAll('.nav-link'); // get all nav links
+
+    navLinks.forEach(function(link) {
+        if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active'); // add 'active' class to current page link
+        }
+       });
     }
 }
 window.addEventListener('DOMContentLoaded', loadNavBar);

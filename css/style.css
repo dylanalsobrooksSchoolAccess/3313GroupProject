@@ -56,9 +56,15 @@ h3 {
     color: var(--uhd-white) !important;
 }
 
+.nav-link {
+    color: var(--uhd-white) !important;
+    transition: color 0.2s ease;
+}
+
 .nav-link:hover,
 .nav-link.active {
     color: var(--uhd-red) !important;
+    text-decoration: underline;
 }
 
 .cta-recipe {
@@ -70,6 +76,7 @@ h3 {
     border-radius: 25px;
     text-decoration: none;
     transition: all 0.25s ease;
+    margin-right: 10px;
 }
 
 .cta-recipe:hover {
@@ -86,9 +93,7 @@ h3 {
     background-color: var(--uhd-red);
     border-radius: 25px;
     text-decoration: none;
-    transition: all 0.25s ease;
-    margin-left: 10px;
-    
+    transition: all 0.25s ease;    
 }
 
 .cta-booking:hover {
