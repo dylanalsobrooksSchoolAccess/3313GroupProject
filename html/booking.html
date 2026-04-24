@@ -37,7 +37,7 @@
 
                             <div class="mb-3">
                                 <label for="event-type" class="form-label form-input-titles">Type of Event:</label>
-                                <select id="event-type" class="form-select form-dropdown">
+                                <select id="event-type" name="event-type" class="form-select form-dropdown">
                                     <option value="null">Select...</option>
                                     <option value="event-type-wedding">Wedding</option>
                                     <option value="event-type-corporate">Corporate</option>
@@ -48,17 +48,17 @@
 
                             <div class="mb-3">
                                 <label for="event-date" class="form-label form-input-titles">Date of Event:</label>
-                                <input type="date" id="event-date" class="form-control form-input">
+                                <input type="date" id="event-date" name="event-date" class="form-control form-input">
                             </div>
 
                             <div class="mb-3">
                                 <label for="event-time" class="form-label form-input-titles">Start Time:</label>
-                                <input type="time" id="event-time" class="form-control form-input">
+                                <input type="time" id="event-time" name="event-time" class="form-control form-input">
                             </div>
 
                             <div class="mb-3">
                                 <label for="guest-count" class="form-label form-input-titles">Estimated Guest Count:</label>
-                                <input type="number" id="guest-count" class="form-control form-input">
+                                <input type="number" id="guest-count" name="guest-count" class="form-control form-input">
                             </div>
                         </div>
                     </div>
@@ -83,23 +83,23 @@
                             <div class="mb-3">
                                 <label class="form-label fw-bold form-input-titles">Preferred Base Spirits:</label>
                                 <div class="form-check">
-                                    <input id="checkbox-vodka" type="checkbox" class="form-check-input form-checkbox">
+                                    <input id="checkbox-vodka" type="checkbox" value="Vodka" name="base-spirits[]" class="form-check-input form-checkbox">
                                     <label for="checkbox-vodka" class="form-check-label form-checkbox-labels">Vodka</label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="checkbox" id="checkbox-tequila" class="form-check-input form-checkbox">
+                                    <input type="checkbox" id="checkbox-tequila" value="Tequila" name="base-spirits[]" class="form-check-input form-checkbox">
                                     <label for="checkbox-tequila" class="form-check-label form-checkbox-labels">Tequila</label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="checkbox" id="checkbox-whiskey" class="form-check-input form-checkbox">
+                                    <input type="checkbox" id="checkbox-whiskey" value="Whiskey" name="base-spirits[]" class="form-check-input form-checkbox">
                                     <label for="checkbox-whiskey" class="form-check-label form-checkbox-labels">Whiskey</label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="checkbox" id="checkbox-rum" class="form-check-input form-checkbox">
+                                    <input type="checkbox" id="checkbox-rum" value="Rum" name="base-spirits[]" class="form-check-input form-checkbox">
                                     <label for="checkbox-rum" class="form-check-label form-checkbox-labels">Rum</label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="checkbox" id="checkbox-gin" class="form-check-input form-checkbox">
+                                    <input type="checkbox" id="checkbox-gin" value="Gin" name="base-spirits[]" class="form-check-input form-checkbox">
                                     <label for="checkbox-gin" class="form-check-label form-checkbox-labels">Gin</label>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@
                             <h2 class="h4 text-center mb-4">Custom Requests</h2>
                             <div class="mb-3">
                                 <label for="special-requests" class="form-label form-input-titles">Custom Cocktail Requests (e.g., Themed Drinks and Menus):</label>
-                                <textarea id="special-requests" class="form-control form-textarea" rows="4" placeholder="Custom Drink Order..."></textarea>
+                                <textarea id="special-requests" name="special-requests" class="form-control form-textarea" rows="4" placeholder="Custom Drink Order..."></textarea>
                             </div>
                         </div>
                     </div>
@@ -124,27 +124,27 @@
 
                                 <div class="mb-3">
                                     <label for="first-name" class="form-label form-input-titles">First Name:</label>
-                                    <input type="text" id="first-name" class="form-control form-input">
+                                    <input type="text" id="first-name" name="first-name" class="form-control form-input">
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="last-name" class="form-label form-input-titles">Last Name:</label>
-                                    <input type="text" id="last-name" class="form-control form-input">
+                                    <input type="text" id="last-name" name="last-name" class="form-control form-input">
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="email" class="form-label form-input-titles">Email Address:</label>
-                                    <input type="email" id="email" class="form-control form-input">
+                                    <input type="email" id="email" name="email" class="form-control form-input">
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="phone" class="form-label form-input-titles">Phone Number:</label>
-                                    <input type="tel" id="phone" class="form-control form-input">
+                                    <input type="tel" id="phone" name="phone" class="form-control form-input">
                                 </div>
                             </div>
                         </div>
 
-                        <div id="error-messages" class="error-text text-danger text-center mb-3"><!-- red error text --></div>
+                        <div id="error-messages" name="error-messages" class="error-text text-danger text-center mb-3"><!-- red error text --></div>
 
                         <!-- submit button -->
                         <div class="text-center">
