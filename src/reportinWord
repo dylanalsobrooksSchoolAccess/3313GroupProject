@@ -43,7 +43,8 @@ Custom rules were also created to ensure images display correctly at different s
 1. index.html (Home Page)
 The landing page features a bold hero section highlighting the “Drink of the Week,” an About Us section, and a trigger for the age verification system. It includes a top navigation bar and a sidebar on larger screens. The page serves as the main entry point and attention-grabber for the site.
 2. recipes.html
-This is the primary educational page. It displays a curated list of 15 classic cocktails in a responsive Bootstrap grid. Each card includes the drink name, description (“vibes”), ingredients, and instructions.
+The recipes.html page is really important for the learning part in the project. It shows a list of 15 cocktails in a way that is easy to read and use. The page works well on screens and small screens because it uses Bootstraps special grid system. Each cocktail has its card with the name of the drink and a little description to give you an idea of what it is, like a list of what you need to make it and steps to follow to make it. The recipes.html page also has a search bar that helps you find a cocktail quickly. This makes it easy to use and find cocktails. The recipes.html page is an example of how to use front-end development to make a nice and organized website. It uses HTML and Bootstrap to make the recipes.html page look nice and be easy to use. The recipes.html page has all the information you need to make these cocktails.
+
 3. booking.html
 This page contains the main business call-to-action. It features a comprehensive 12-control booking form for private bartender services.It is organized into clear sections such as Event Information, Party Preferences, and Contact Information to make it easier for users to follow. The form uses the required http://www.randyconnolly.com/tests/process.php action.
 4. submit-recipe.html
