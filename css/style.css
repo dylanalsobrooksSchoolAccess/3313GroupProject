@@ -3,7 +3,6 @@
 
 /* this section is how we set up the fonts and colors so everything stays consistent across the whole website */
 :root {
-:root {
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Poppins', sans-serif;
     --red: #c8102e;
