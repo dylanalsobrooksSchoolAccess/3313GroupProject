@@ -45,7 +45,7 @@ The landing page features a bold hero section highlighting the “Drink of the W
 2. recipes.html
 This is the primary educational page. It displays a curated list of 15 classic cocktails in a responsive Bootstrap grid. Each card includes the drink name, description (“vibes”), ingredients, and instructions.
 3. booking.html
-This page contains the main business call-to-action. It features a comprehensive 12-control booking form for private bartender services. The form uses the required http://www.randyconnolly.com/tests/process.php action.
+This page contains the main business call-to-action. It features a comprehensive 12-control booking form for private bartender services.It is organized into clear sections such as Event Information, Party Preferences, and Contact Information to make it easier for users to follow. The form uses the required http://www.randyconnolly.com/tests/process.php action.
 4. submit-recipe.html
 This page serves as a secondary call-to-action to engage enthusiastic users. It allows visitors to submit their own cocktail recipes with the possibility of being featured on the home page. The form is divided into two clear sections: “Recipe Information” and “Contact Information.
 ”To keep our code clean and maintainable (“DRY” principle), we abstracted the navigation bar, sidebar, and footer into a single JavaScript file (ui.js) that dynamically injects these elements across all pages.
