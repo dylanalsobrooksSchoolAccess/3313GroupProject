@@ -26,7 +26,7 @@ function loadNavBar() {
 
     if (currentPage === "") { 
         currentPage = "index.html";
-    } // redirect root to index
+    } // try to route '' to index.html  
 
     let navLinks = document.querySelectorAll('.nav-link'); // get all nav links
 

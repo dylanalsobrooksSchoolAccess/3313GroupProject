@@ -63,9 +63,14 @@ h3 {
     color: var(--light) !important;
     border-radius: 20px;
     transition: 0.25s ease;
+    margin-right: .5rem;
 }
 
-.nav-link:hover,
+.nav-link:hover {
+    color: var(--red) !important;
+    background-color: var(--white);
+}
+
 .nav-link.active {
     color: var(--white) !important;
     background-color: var(--red);
@@ -82,6 +87,7 @@ h3 {
     border-radius: 25px;
     text-decoration: none;
     transition: 0.25s ease;
+    margin-right: .5rem;
 }
 
 .cta-recipe {
@@ -107,13 +113,24 @@ h3 {
     border: 2px solid var(--navy);
     background-color: transparent;
 }
- */ This hover effects give users feedback when clicking with buttons*/
-.cta-recipe:hover,
-.cta-booking:hover,
-.submit-form-button:hover {
+ /* This hover effects give users feedback when clicking with buttons*/
+.cta-recipe:hover {
+    color: var(--red);
+    border: 2px solid var(--red);
+    background-color: var(--white);
+}
+
+
+.cta-booking:hover {
     color: var(--red);
     background-color: var(--white);
-    border-color: var(--white);
+    border-color: var(--red);
+}
+
+.submit-form-button:hover {
+    color: var(--light);
+    background-color: var(--gray);
+    border-color: var(--gray);
 }
 
 .cta-enroll-now:hover {
