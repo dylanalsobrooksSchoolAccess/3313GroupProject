@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+
+/* this section is how we set up the fonts and colors so everything stays consistent across the whole website */
+:root {
 :root {
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Poppins', sans-serif;
@@ -10,7 +13,7 @@
     --light: #f8f9fa;
     --gray: #6c757d;
 }
-
+/*Applying the primary font and base color to the entire site */
 body {
     font-family: var(--font-body);
     color: var(--black);
@@ -24,7 +27,7 @@ h3 {
     color: var(--navy);
 }
 
-/* sidebar */
+/* for the sidebar the full viewport height makes the layout consitent and sticky positioning will be able to help keep it visible for the customers  */
 .sidebar {
     background-color: var(--light);
     height: 100vh;
@@ -42,7 +45,7 @@ h3 {
     color: var(--navy);
     transition: color 0.25s ease;
 }
-
+/* highlight links when users hover over them */
 .sidebar a:hover {
     color: var(--red);
 }
@@ -105,7 +108,7 @@ h3 {
     border: 2px solid var(--navy);
     background-color: transparent;
 }
-
+ */ This hover effects give users feedback when clicking with buttons*/
 .cta-recipe:hover,
 .cta-booking:hover,
 .submit-form-button:hover {
@@ -124,12 +127,12 @@ h3 {
     background-color: var(--navy);
 }
 
-/* footer */
+
 footer {
     border-top: 4px solid var(--red);
 }
 
-/* forms */
+/* Keeping all form fields consistent so users have a smooth experience */
 .form-input,
 .form-dropdown,
 .form-textarea {
@@ -155,7 +158,7 @@ footer {
     color: var(--navy);
     font-weight: 600;
 }
-
+/* highlights selected options so users can clearly see their choices */
 .form-check-input:checked {
     background-color: var(--red);
     border-color: var(--red);
@@ -192,13 +195,13 @@ footer {
     object-fit: cover;
     object-position: 50% 45%;
 }
-
+/* keeps headings consistent across sections on the website  */
 .getCertifiedH2,
 .learningForEveryoneH2,
 .aboutUsH2 {
     font-size: 3rem;
 }
-
+/* makes paragraph text easier to read for user */
 .getCertifiedP,
 .learningForEveryoneP,
 .aboutUsP {
@@ -218,8 +221,8 @@ footer {
     object-fit: cover;
     object-position: 50% 60%;
 }
+/*  booking page booking card limits form width so it’s easier for users to read and fill out */
 
-/* booking page */
 .bookingCard {
     max-width: 1000px;
 }
