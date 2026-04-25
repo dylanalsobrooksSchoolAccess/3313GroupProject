@@ -2,7 +2,7 @@ MEETING NOTES - 04/08/2026
 
 ### Tasks:
     JT -        Continue working on index.html
-    Giovanni -  Recipes Page (you can start with a boilerplate)
+    Giovanni -  Recipes Page
     Ashleigh - .form-input & .btn-primary rules in CSS
     Dylan -     JavaScript logic targeting getElementByID('btn-yes'), Develop booking.html, Create some recipes
 

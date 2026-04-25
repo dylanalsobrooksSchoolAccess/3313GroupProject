@@ -1,55 +1,88 @@
-Report – 30 points
-1)The report has a table of content: introduction, body and a conclusion.
-2)Explain the design theme and concept.
-3)List the styles of each html page.
-4)Explain the form and each html page.
-5)Include name of the team members on top of the report.
+Project Report
 
-Table of content
+Dylan Alsobrooks, JT Tovar, Ashleigh-Isabella Uzuegbu, Giovanni Ordonez
+Department of Information Systems, University of Houston-Downtown
+MIS3313: Designing and Developing Business Web Applications
+Professor Dung Bui
 
-Introduction
+ 
+Table of Contents
+- Introduction
+- Design Theme and Concept
+- Stylesheet Implementation
+- Webpage Breakdown
+- - 1. index.html (Home Page)
+- - 2. recipes.html
+- - 3. booking.html
+- - 4. submitRecipe.html
+- JavaScript Explanation
+- Form Explanation
+- Conclusion
 
-    The purpose of our site, "Dylan's Bartending School," is to serve as an educational resource where users can learn to make popular cocktails at home. 
-It also functions as a business portal where customers can book a private bartender for events. 
-The site is designed to be easy to navigate, visually appealing, and fully responsive for both desktop and mobile devices. 
 
-Body
+ 
+- Introduction
+The purpose of our website, Dylan’s Bartending School, is to serve as both an educational resource as well as a business portal. 
+Users can learn how to make popular cocktails at home, explore professional recipes, and book a private bartender for events. 
+Our website is designed to be appealing visually, have easy navigation, and remain fully responsive across various devices.
 
-Design Theme and Concept:
-    We wanted the site to feel professional, upscale, and slightly moody, matching the atmosphere from a real cocktail bar. 
-To meet the project requirements, we incorporated the UHD color palette into our brand identity. 
-We used UHD Red (#c8102e) as our accent color for active states and UHD Navy (#1f3a5f) for borders and headings.
-The combination of dark and light colors is an attempt to make the content 'pop off the screen.'
+- Design Theme and Concept
+We chose a professional yet approachable scholarly theme that still reflects the upscale atmosphere of a real cocktail bar. 
+The overall aesthetic is modern, slightly moody, and elegant, using a dark-and-light color scheme to make content stand out. 
+We incorporated the UHD color palette, specifically UHD Red (#c8102e) as our primary accent color for buttons and active states, and UHD Navy (#1f3a5f) for headings and borders.
+This combination creates a premium feeling while staying warm and inviting both beginners and experienced users.
 
-Stylesheet Implementation:
-    We used the Bootstrap 5 framework to quickly structure the elements of the entire site. 
-Bootstrap's grid system did much of the heavy lifting, along with the utility classes to handle spacing and shadows with ease. 
-    Any styling that was not a product of the Bootstrap framework was written in our 'style.css' file.
-Within this file, we imported two google fonts, 'Playfair Display' and 'Poppins.' 
-We created custom sizing rules for the images used, so that they do not appear stretched or distorted across different device screens. 
+- Stylesheet Implementation
+The entire site was built using the Bootstrap 5 framework for layout, responsiveness, and consistent styling. 
+Bootstrap’s grid system and utility classes managed most of the structural work. 
+Any other custom styling was placed in a single external file named style.css. 
+In this style sheet, we imported two Google Fonts; Playfair Display as headings and Poppins within the body. 
+Custom rules were also created to ensure images display correctly at different screen sizes without distortion.
 
-Webpage Breakdown: 
-- index.html. The home page (landing page) serves as the main entry point and attention-grabber for the site. It is structured by a top navigation bar, a side navigation bar, the main contents and an age verification trigger before entering the site. It features a bold hero section highlighting the “Drink of the Week,” a search bar, and an About Us section. It also features a “Book a bartender today!” button link that will take you to the site’s Book a Bartender page.
-- recipe.html
-    primary location for educational resources, displays curated list of 15 classic cocktails, organized into responsive grid with bootstrap, each card has name, vibes, ingredients, instructions
-- booking.html
-    primary location for business requests, features a 12-control booking form, describe form details, routes via post to PHP server
-- submitRecipe.html
-    This page is meant to be a second call-to-action page, to retain enthusiastic users and drive engagement with a chance of their recipe being featured on the home page. 
-The form is made up of two sections to group relevant details.
-The first being 'Recipe Information,' with a textbox to enter the custom drink name, and text areas to capture details such as ingredients, descriptions, and instructions. 
-The second is 'Contact Information,' which re-uses the section from booking.html. 
-Contact information is located at the bottom of both forms to allow users to easily differentiate the purpose of each form at a glance. 
+- Webpage Breakdown
+- - 1. index.html (Home Page)
+The landing page features a bold hero section highlighting the “Drink of the Week,” an About Us section, and a trigger for the age verification system. 
+It includes a top navigation bar and a sidebar on larger screens. 
+The page serves as the main entry point and attention-grabber for the site. 
+The index page has keywords that will help us rank better on search engines after publishing. 
 
-    To keep our code 'DRY' (Don't Repeat Yourself), we abstracted our navigation, sidebar, and footer into a single JavaScript file called 'ui.js.'
-This script injects these elements across all four HTML pages while they are loading. 
+- - 2. recipes.html
+The recipes.html page serves as the learning hub in our website; it sets the stage for our website to become an authority on all things cocktails. 
+Our team organized each cocktail recipe on a Bootstrap card in a responsive grid; they show the drink's name, vibe, ingredients, and instructions. 
+Our choice of the responsive grid lets our site scale down and display properly on mobile devices. 
+This page also has a search bar that helps you find cocktails quickly, making it easy to use and find cocktails. 
+The recipes.html page has all the information you need to make these cocktails.
 
-Conclusion
-summary of report (mention collaboration via zoom, groupme, github, email)
+- - 3. booking.html
+This page has the core business call-to-action. 
+It features a comprehensive 12-control booking form for private bartender services. 
+It is organized into clear sections such as Event Information, Party Preferences, and Contact Information to make it easier for users to follow. 
+The form uses the POST method and sends all variables to the PHP test page.
 
-    Building this website was a fun way to challenge our group's HTML/CSS/JavaScript skills! 
-One of our biggest challenges was getting a layout that looked stylish on both the desktop and mobile views, without repeating large blocks of code.  
-After brainstorming some different options for what our theme should be, the group voted to create a bartending website. 
-Because we had direct access to a professional bartender in the family, we were able to curate an authentic list of the 15 classic cocktails most frequently ordered, which gave the site a highly realistic feel. 
-Once there was content to implement into the webpages, our group met at minimum once a week. 
-Using GroupMe, Zoom, and Github, we collaborated and delegated tasks to effectively meet our deadline. 
+- - 4. submitRecipe.html
+This page serves as a secondary call-to-action to engage enthusiastic users. 
+It allows visitors to send their own cocktail recipes with the possibility of being featured on the home page. 
+The form is divided into two clear sections: “Recipe Information” and “Contact Information." 
+Recipe Information has one input for the drink name, and three text areas for ingredients, instructions, and notes. 
+Contact Information is identical to the contact information collected from the booking form. 
+Submitting the recipe form will also take you to the PHP test page, where all variables are present. 
+
+- JavaScript Explanation
+Using the "DRY" (Don't repeat yourself) principles, we avoided hardcoding the same features on each of the four HTML pages. 
+Instead, we abstracted these elements into a single JavaScript file (ui.js). 
+Then, with event-listeners, our script injects the HTML into the necessary containers, making collaboration and maintenance much easier. 
+
+- Form Explanation
+Our primary business call-to-action is the booking form found in booking.html. 
+It uses twelve form controls to capture the necessary details for an event booking. 
+The breakdown of this form includes a dropdown for event type, time and date inputs, a number input for guest count, radio buttons for glassware rentals, 
+multiple checkboxes for preferred base spirits, a text area for custom requests, then inputs for customer names, phone numbers, and emails. 
+After clicking submit, the data sends all the variables to the PHP testing server. 
+
+- Conclusion
+Building Dylan’s Bartending School was an excellent opportunity to apply and strengthen our HTML, CSS, and JavaScript skills. 
+After brainstorming several themes, the group agreed on a bartending school concept. 
+Having direct access to a professional bartender in the family allowed us to create an authentic and realistic list of classic cocktails. 
+One of our biggest challenges was creating a stylish and consistent layout that worked well on both desktop and mobile without reusing large blocks of code. 
+Our team collaborated effectively through weekly Zoom meetings, GroupMe, GitHub, and email. 
+We are proud of the final website and believe it successfully meets all project requirements while providing useful and engaging user experience.
