@@ -3,166 +3,168 @@
 :root {
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Poppins', sans-serif;
-
-    /* UHD color palette */
-    --uhd-red: #c8102e;
-    --uhd-red-dark: #a30d25;
-    --uhd-navy: #1f3a5f;
-    --uhd-white: #ffffff;
-    --uhd-black: #000000;
-    --uhd-light: #f8f9fa;
-    --uhd-gray: #6c757d;
+    --red: #c8102e;
+    --navy: #1f3a5f;
+    --white: #ffffff;
+    --black: #000000;
+    --light: #f8f9fa;
+    --gray: #6c757d;
 }
 
 body {
     font-family: var(--font-body);
-    color: var(--uhd-black);
-    background-color: var(--uhd-white);
+    color: var(--black);
+    background-color: var(--white);
 }
 
 h1,
 h2,
 h3 {
     font-family: var(--font-heading);
-    color: var(--uhd-navy);
+    color: var(--navy);
 }
 
 /* sidebar */
 .sidebar {
-    background-color: var(--uhd-light);
+    background-color: var(--light);
     height: 100vh;
     position: sticky;
     top: 0;
-    border-right: 3px solid var(--uhd-navy);
+    border-right: 3px solid var(--navy);
 }
 
 .sidebar h5 {
-    color: var(--uhd-red);
+    color: var(--red);
     font-weight: 700;
 }
 
 .sidebar a {
-    color: var(--uhd-navy);
-    transition: color 0.2s ease;
+    color: var(--navy);
+    transition: color 0.25s ease;
 }
 
 .sidebar a:hover {
-    color: var(--uhd-red);
+    color: var(--red);
 }
 
-
 /* navbar */
+.navbar {
+    border-bottom: 4px solid var(--red);
+}
+
 .navbar-brand {
-    color: var(--uhd-white) !important;
+    font-family: var(--font-heading);
+    color: var(--white) !important;
 }
 
 .nav-link {
-    color: var(--uhd-white) !important;
-    transition: color 0.2s ease;
+    color: var(--light) !important;
+    border-radius: 20px;
+    transition: 0.25s ease;
 }
 
 .nav-link:hover,
 .nav-link.active {
-    color: var(--uhd-red) !important;
-    text-decoration: underline;
+    color: var(--white) !important;
+    background-color: var(--red);
+}
+
+/* buttons and links */
+.cta-recipe,
+.cta-booking,
+.cta-enroll-now,
+.cta-learn-more,
+.submit-form-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.25s ease;
 }
 
 .cta-recipe {
-    display: inline-block;
-    border: 2px solid var(--uhd-light);
-    color: var(--uhd-light);
-    padding: 4px 10px;
-    background-color: transparent;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: all 0.25s ease;
-    margin-right: 10px;
-}
-
-.cta-recipe:hover {
-    background-color: var(--uhd-red);
-    color: var(--uhd-light);
-    border-color: var(--uhd-red);
+    color: var(--light);
+    border: 2px solid var(--light);
 }
 
 .cta-booking {
-    display: inline-block;
-    border: 2px solid var(--uhd-red);
-    color: var(--uhd-light);
-    padding: 4px 10px;
-    background-color: var(--uhd-red);
-    border-radius: 25px;
-    text-decoration: none;
-    transition: all 0.25s ease;    
+    color: var(--light);
+    background-color: var(--red);
+    border: 2px solid var(--red);
 }
 
-.cta-booking:hover {
-    background-color: var(--uhd-white);
-    color: var(--uhd-red);
-    border-color: var(--uhd-white);
+.cta-enroll-now,
+.submit-form-button {
+    color: var(--gray);
+    border: 2px solid var(--gray);
+    background-color: transparent;
+}
+
+.cta-learn-more {
+    color: var(--navy);
+    border: 2px solid var(--navy);
+    background-color: transparent;
+}
+
+.cta-recipe:hover,
+.cta-booking:hover,
+.submit-form-button:hover {
+    color: var(--red);
+    background-color: var(--white);
+    border-color: var(--white);
+}
+
+.cta-enroll-now:hover {
+    color: var(--light);
+    background-color: var(--gray);
+}
+
+.cta-learn-more:hover {
+    color: var(--light);
+    background-color: var(--navy);
 }
 
 /* footer */
 footer {
-    border-top: 4px solid var(--uhd-red);
+    border-top: 4px solid var(--red);
 }
-
-
 
 /* forms */
-.form-input {
+.form-input,
+.form-dropdown,
+.form-textarea {
     width: 100%;
-    max-width: 420px;
     padding: 0.75rem 1rem;
     font-family: var(--font-body);
-    font-size: 1rem;
-    color: var(--uhd-black);
-    background-color: var(--uhd-white);
-    border: 2px solid var(--uhd-navy);
+    border: 2px solid var(--navy);
     border-radius: 8px;
-    outline: none;
-    box-sizing: border-box;
-    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    transition: 0.25s ease;
 }
 
-.form-input::placeholder {
-    color: var(--uhd-gray);
-}
-
-.form-input:hover {
-    border-color: var(--uhd-red);
-}
-
-.form-input:focus {
-    border-color: var(--uhd-red);
+.form-input:hover,
+.form-dropdown:hover,
+.form-textarea:hover,
+.form-input:focus,
+.form-dropdown:focus,
+.form-textarea:focus {
+    border-color: var(--red);
     box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.2);
 }
 
-.submit-form-button {
-    display: inline-block;
-    border: 2px solid var(--uhd-gray);
-    color: var(--uhd-gray);
-    padding: 4px 10px;
-    background-color: transparent;
-    border-radius: 25px;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: all 0.25s ease;
+.form-input-titles {
+    color: var(--navy);
+    font-weight: 600;
 }
-.submit-form-button:hover {
-    background-color: var(--uhd-red);
-    color: var(--uhd-light);
-    border-color: var(--uhd-red);
+
+.form-check-input:checked {
+    background-color: var(--red);
+    border-color: var(--red);
 }
 
 /* age verification modal */
-/* full-screen overlay */
 .modal-overlay {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
@@ -170,9 +172,8 @@ footer {
     z-index: 9999;
 }
 
-/* inner modal content */
 .modal-content {
-    background-color: var(--uhd-white);
+    background-color: var(--white);
     padding: 40px;
     border-radius: 12px;
     text-align: center;
@@ -180,107 +181,45 @@ footer {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* modal buttons */
 .modal-content button {
     margin: 10px;
 }
 
-
-
-
 /* home page */
 .indexHero {
     max-height: 500px;
+    width: 80%;
     object-fit: cover;
     object-position: 50% 45%;
-    width: 80%;
 }
 
-/* get certified */
-.getCertifiedH2 {
+.getCertifiedH2,
+.learningForEveryoneH2,
+.aboutUsH2 {
     font-size: 3rem;
 }
-.getCertifiedImg {
-    max-height: 500px;
-    object-fit: cover;
-}
 
-.getCertifiedP {
-    font-size: 1.75rem;
-    line-height: 1.6;
-}
-
-.cta-enroll-now {
-    display: inline-block;
-    border: 2px solid var(--uhd-gray);
-    color: var(--uhd-gray);
-    padding: 4px 10px;
-    background-color: transparent;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: all 0.25s ease;
-}
-
-.cta-enroll-now:hover {
-    background-color: var(--uhd-gray);
-    color: var(--uhd-light);
-    border-color: var(--uhd-gray);
-}
-
-/* learning for everyone */
-.learningForEveryoneH2 {
-    font-size: 3rem;
-    padding: 2.5%;
-}
-
-.learningForEveryoneImg {
-    height: 300px;
-    object-fit: cover;
-    object-position: 50% 60%;
-    width: 100%;
-}
-
-.learningForEveryoneP {
-    font-size: 1.75rem;
-    line-height: 1.6;
-}
-
-.cta-learn-more {
-    display: inline-block;
-    border: 2px solid var(--uhd-navy);
-    color: var(--uhd-navy);
-    padding: 4px 10px;
-    background-color: transparent;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: all 0.25s ease;
-}
-
-.cta-learn-more:hover {
-    background-color: var(--uhd-navy);
-    color: var(--uhd-light);
-    border-color: var(--uhd-navy);
-}
-
-
-
-/* about us */
-.aboutUsImg {
-    max-height: 600px;
-    object-fit: cover;
-}
-
+.getCertifiedP,
+.learningForEveryoneP,
 .aboutUsP {
     font-size: 1.75rem;
     line-height: 1.6;
 }
 
-.aboutUsH2 {
-    font-size: 3rem;
+.getCertifiedImg,
+.aboutUsImg {
+    max-height: 500px;
+    object-fit: cover;
 }
 
+.learningForEveryoneImg {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 60%;
+}
 
-/* booking page */ 
+/* booking page */
 .bookingCard {
     max-width: 1000px;
 }
