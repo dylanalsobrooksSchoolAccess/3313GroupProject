@@ -29,8 +29,7 @@ Within this file, we imported two google fonts, 'Playfair Display' and 'Poppins.
 We created custom sizing rules for the images used, so that they do not appear stretched or distorted across different device screens. 
 
 Webpage Breakdown: 
-- index.html. start with purpose of page. describe how it functions. nav,sidebar,main content, ect.
-    Landing page, attention getter with hero, about us section (bootstrap flex & grid), !trigger for age verification system!
+- index.html. The home page (landing page) serves as the main entry point and attention-grabber for the site. It is structured by a top navigation bar, a side navigation bar, the main contents and an age verification trigger before entering the site. It features a bold hero section highlighting the “Drink of the Week,” a search bar, and an About Us section. It also features a “Book a bartender today!” button link that will take you to the site’s Book a Bartender page.
 - recipe.html
     primary location for educational resources, displays curated list of 15 classic cocktails, organized into responsive grid with bootstrap, each card has name, vibes, ingredients, instructions
 - booking.html
